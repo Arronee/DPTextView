@@ -10,12 +10,12 @@
 
 @interface DPTextView : UITextView
 
-@property (copy, nonatomic, nullable) IBInspectable NSString *placeholder;
+@property (copy, nonatomic, nullable) IBInspectable NSString *placeholder;//占位符
 
-@property (strong, nonatomic, nullable) IBInspectable UIColor *placeholderColor;
+@property (strong, nonatomic, nullable) IBInspectable UIColor *placeholderColor;//占位符的颜色
 
-@property (strong, nonatomic, nullable) UIFont *placeholderFont;
+@property (strong, nonatomic, nullable) UIFont *placeholderFont;//占位符的字体大小
 
-@property(nonatomic,assign)NSInteger maxLength;//字体的最大长度
+@property(nonatomic,assign)NSInteger maxLength;//输入框的最大限制字数
 
 @end

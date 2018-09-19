@@ -46,6 +46,7 @@
     self.font = [UIFont systemFontOfSize:16.0f];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(textDidChange) name:UITextViewTextDidChangeNotification object:self];
+    
 }
 #pragma mark - UITextViewTextDidChangeNotification
 - (void)textDidChange {
@@ -63,6 +64,7 @@
     [super setText:text];
     
     [self textDidChange];
+    
 }
 
 - (void)setAttributedText:(NSAttributedString *)attributedText {
@@ -98,7 +100,6 @@
         _numLabel.textColor = [UIColor blackColor];
         _numLabel.font = [UIFont systemFontOfSize:14.0];
         _numLabel.textAlignment = NSTextAlignmentRight;
-        _numLabel.backgroundColor = [UIColor yellowColor];
     }
     return _numLabel;
 }
